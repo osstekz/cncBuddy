@@ -1,19 +1,18 @@
 
 ###CNC 3 axis software suite
-
-*cncBuddyUI: Windows G-Code parser/interpreting master control program. 
+* cncBuddyUI: Windows G-Code parser/interpreting master control program. 
     - Fully configurable X,Y,Z,A Axis
     - Workspace / Tool Offsets
     - IPM Calibration
     - Jogging devices(Analog NESController,Analog Joystick,Keyboard)
 
-*cncBuddyCAM: NetduinoPlus2 4 stepper driver and G-Code processor.
+* cncBuddyCAM: NetduinoPlus2 4 stepper driver and G-Code processor.
 
 ![cncBuddyUI](/images/cncBuddyUI.png)
 
 If you would like to see additional functionality, feel free to post an enhancement/change request.
 ------------------------------------
-###Configuration
+##Configuration
 * General
     - Netduino IP address (default Port:80)
     - Feed Rates
@@ -28,16 +27,16 @@ If you would like to see additional functionality, feel free to post an enhancem
 * 2D Simulator
     - Enable / Speed / Zoom Cut Diameter
 ------------------------------------
-###cncBuddyUI startup options 
+##cncBuddyUI startup options 
  --resetcfg			Create new default configuration
 ------------------------------------
-###HOW TO RUN
+##HOW TO RUN
  
 ------------------------------------
-####DEVELOPMENT
+##DEVELOPMENT
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions to this are absolutely welcome! Feel free to file issues.
  
 ------------------------------------
-####EXTENDED FEATURES
+##EXTENDED FEATURES
