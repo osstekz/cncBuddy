@@ -62,19 +62,19 @@ If you would like to see additional functionality, feel free to post an enhancem
   - At start up, we always produce an "ESTOP" condition! Any/All errors must be resolved before you can Reset/Clear an "ESTOP" (Safety1st).
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options:
-      --resetcfg			Create new default configuration
+      '--resetcfg'			Create new default configuration
 
 -----------------------
 ####ESTOP
 ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
 
-	|#|Name|
-	| --: | ------------------------------------------------------------- |
-	|01|PAUSE button|
-	|02|ESTOP button|
-	|04|OVERTRAVEL - limit switch detected|
-	|08|CLIENTSOCKETNOTREADY - network connection not ready/available|
-	|16|CONFIGERROR - configuration error|
+	| ## |                         Description                           |
+	| -- | ------------------------------------------------------------- |
+	| 01 | PAUSE button                                                  |
+	| 02 | ESTOP button                                                  |
+	| 04 | OVERTRAVEL - limit switch detected                            |
+	| 08 | CLIENTSOCKETNOTREADY - network connection not ready/available |
+	| 16 | CONFIGERROR - configuration error                             |
 
 -----------------------
 ####Development
