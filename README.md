@@ -1,5 +1,5 @@
 
-###CNC 3 axis software suite
+###CNC 3 Axis software suite
 * cncBuddyUI: Windows G-Code parser/interpreting master control program. 
     - Fully configurable X,Y,Z,A Axis
     - Workspace / Tool Offsets
@@ -35,13 +35,13 @@ If you would like to see additional functionality, feel free to post an enhancem
 ~~~~
 
 -----------------------
-####HOW TO RUN
+####How to run
  
 -----------------------
-####DEVELOPMENT
+####Development
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions to this are absolutely welcome! Feel free to file issues.
  
 -----------------------
-####EXTENDED FEATURES
+####Extended Features
