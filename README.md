@@ -30,7 +30,10 @@ If you would like to see additional functionality, feel free to post an enhancem
 
 -----------------------
 ####cncBuddyUI startup options 
- --resetcfg			Create new default configuration
+~~~~
+    --resetcfg			Create new default configuration
+~~~~
+
 -----------------------
 ####HOW TO RUN
  
