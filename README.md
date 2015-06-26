@@ -1,10 +1,12 @@
 
 ###CNC 3 axis software suite
+
 *cncBuddyUI: Windows G-Code parser/interpreting master control program. 
     - Fully configurable X,Y,Z,A Axis
     - Workspace / Tool Offsets
     - IPM Calibration
     - Jogging devices(Analog NESController,Analog Joystick,Keyboard)
+
 *cncBuddyCAM: NetduinoPlus2 4 stepper driver and G-Code processor.
 
 ![cncBuddyUI](/images/cncBuddyUI.png)
