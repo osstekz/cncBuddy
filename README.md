@@ -11,7 +11,8 @@
 ![cncBuddyUI](/images/cncBuddyUI.png)
 
 If you would like to see additional functionality, feel free to post an enhancement/change request.
-------------------------------------
+
+-----------------------
 ##Configuration
 * General
     - Netduino IP address (default Port:80)
@@ -26,17 +27,18 @@ If you would like to see additional functionality, feel free to post an enhancem
     - GPIO pins Step / Direction / Limit Switch
 * 2D Simulator
     - Enable / Speed / Zoom Cut Diameter
-------------------------------------
+
+-----------------------
 ##cncBuddyUI startup options 
  --resetcfg			Create new default configuration
-------------------------------------
+-----------------------
 ##HOW TO RUN
  
-------------------------------------
+-----------------------
 ##DEVELOPMENT
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions to this are absolutely welcome! Feel free to file issues.
  
-------------------------------------
+-----------------------
 ##EXTENDED FEATURES
