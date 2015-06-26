@@ -62,7 +62,9 @@ If you would like to see additional functionality, feel free to post an enhancem
   - At start up, we always produce an "ESTOP" condition! Any/All errors must be resolved before you can Reset/Clear an "ESTOP" (Safety1st).
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options:
-      '--resetcfg'			Create new default configuration
+~~~~
+      --resetcfg			Create new default configuration
+~~~~
 
 -----------------------
 ####ESTOP
@@ -78,8 +80,9 @@ ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC v
 
 -----------------------
 ####Development
-I've built a couple of CNC machines, so I rely heavily on this project for their day to day use.
-Whether applying bug fixes, performance tuning, or adding features, I'm dedicated to growing it's base.
+I've built a couple CNC machines which rely heavily on this project for their day to day use.
+I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.
+
 Feel free to file issues and change requests.
 
 Development and testing use the .NET Micro Framework SDK v4.2.2
