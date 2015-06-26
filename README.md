@@ -38,7 +38,7 @@ If you would like to see additional functionality, feel free to post an enhancem
 
 -----------------------
 ####Installation
-    - Download the zip archive and unpack or git-clone the project. The \bin folder contains the file application files.
+    - Download the zip archive and unpack or git-clone the project. The \bin folder contains the application files.
     - \bin\cncBuddyCAM.hex is a Netduino+2 image for .NET Micro Framework SDK v4.2.2.  You must run MFDeploy.exe to load the
 	     hex image onto your Netduino+2. Once the cncBuddyCAM.hex image is loaded...
         - Make sure the device is responding: 
@@ -64,15 +64,14 @@ If you would like to see additional functionality, feel free to post an enhancem
 		     Reset/Clear an "ESTOP" (Safety1st).
         - Audible beeps are used during "ESTOP" conditions and error detection.
         - Command line options:
-~~~~
-            --resetcfg			Create new default configuration
-~~~~
+            "--resetcfg"			Create new default configuration
 
 -----------------------
 ####ESTOP
-ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination of
+ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
 
 	|#:|Name|
+	|--|-------------------------------------------------------------|
 	|01|PAUSE button|
 	|02|ESTOP button|
 	|04|OVERTRAVEL - limit switch detected|
