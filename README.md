@@ -13,7 +13,7 @@
 If you would like to see additional functionality, feel free to post an enhancement/change request.
 
 -----------------------
-##Configuration
+####Configuration
 * General
     - Netduino IP address (default Port:80)
     - Feed Rates
@@ -29,16 +29,16 @@ If you would like to see additional functionality, feel free to post an enhancem
     - Enable / Speed / Zoom Cut Diameter
 
 -----------------------
-##cncBuddyUI startup options 
+####cncBuddyUI startup options 
  --resetcfg			Create new default configuration
 -----------------------
-##HOW TO RUN
+####HOW TO RUN
  
 -----------------------
-##DEVELOPMENT
+####DEVELOPMENT
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions to this are absolutely welcome! Feel free to file issues.
  
 -----------------------
-##EXTENDED FEATURES
+####EXTENDED FEATURES
