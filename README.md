@@ -67,12 +67,12 @@ If you would like to see additional functionality, feel free to post an enhancem
 ~~~~
 CNCBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
 
-/help|/?		Show this help/usage information
-/reset		Create new default software configuration
-/discover	Listen for cncBuddyCAM broadcasting IPAddress & Port (timeout 30 secs)
-/install		Install hardware specific settings on Netduino+2 SDCard. Overrides software configuration values
-   port		Network port number (default=80)
-   axisA		Slave axisA motor signals to X or Y axis
+/help|/?    Show this help/usage information
+/reset      Create new default software configuration
+/discover   Listen for cncBuddyCAM broadcasting IPAddress & Port (timeout 30 secs)
+/install    Install hardware specific settings on Netduino+2 SDCard. Overrides software configuration values
+   port     Network port number (default=80)
+   axisA    Slave axisA motor signals to X or Y axis
 ~~~~
 
 -----------------------
