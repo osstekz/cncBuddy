@@ -1,7 +1,8 @@
 
 ###CNC 3 Axis software suite
 * cncBuddyUI: Windows G-Code parser/interpreting master control program. 
-  - Fully configurable X,Y,Z,A Axis
+  - Fully configurable 4 stepper motor (X,Y,Z,A)
+  - Netduino+2 network(IP/Port) discovery
   - Workspace / Tool Offsets
   - InchesPerMinute Calibration
   - Jogging devices(Analog NESController,Analog Joystick,Keyboard)
@@ -10,6 +11,7 @@
 
 * cncBuddyCAM: Netduino+2 controller
   - GPIO control up to 4 stepper motors
+  - UDP broadcast IPAddress/Port for discovery
   - G-Code processor
   - SDCard job caching
   - X,Y,Z axis JogMode
@@ -23,7 +25,7 @@ If you would like to see additional functionality, feel free to post an enhancem
 -----------------------
 ####Configuration
 * General
-  - Netduino+2 IP address (default Port:80)
+  - Netduino+2 IP address & Port (default Port:80)
   - Feed Rates
   - G-Code Header/Footer files
 * Axis Settings: X,Y,Z
@@ -52,7 +54,7 @@ If you would like to see additional functionality, feel free to post an enhancem
 ####Getting started
 - cncBuddyCAM:
   - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
-    - The ONSWITCH1 (typically for rebooting) is redesigned for use as an "ESTOP" button (Safety1st).
+    - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
     - At start up, software always defaults to an "ESTOP" condition (Safety1st)!
 - cncBuddyUI:
   - Set all operating parameters in menu "Machine->Configuration Settings". Clicking the "Save" button:
@@ -61,9 +63,16 @@ If you would like to see additional functionality, feel free to post an enhancem
     3. settings are stored locally on your hard drive to be used during next startup.
   - At start up, we always produce an "ESTOP" condition! Any/All errors must be resolved before you can Reset/Clear an "ESTOP" (Safety1st).
   - Audible beeps are used during "ESTOP" conditions and error detection.
-  - Command line options:
+  - Command line options (prefixed by "-","--", or "/"):
 ~~~~
-      --resetcfg			Create new default configuration
+CNCBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
+
+/help|/?		Show this help/usage information
+/reset		Create new default software configuration
+/discover	Listen for cncBuddyCAM broadcasting IPAddress & Port (timeout 30 secs)
+/install		Install hardware specific settings on Netduino+2 SDCard. Overrides software configuration values
+   port		Network port number (default=80)
+   axisA		Slave axisA motor signals to X or Y axis
 ~~~~
 
 -----------------------
