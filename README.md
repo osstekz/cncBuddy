@@ -1,12 +1,14 @@
 
 ###CNC 3 Axis software suite
-* cncBuddyUI: Windows G-Code parser/interpreting master control program. 
+* CncBuddyUI: Windows G-Code parser/interpreting master control program. 
   - Fully configurable 4 stepper motor (X,Y,Z,A)
   - Netduino+2 network(IP/Port) discovery
   - Workspace / Tool Offsets
   - InchesPerMinute Calibration
+  - 3D Path Viewer
   - Jogging devices(Analog NESController,Analog Joystick,Keyboard)
   - Audible speech command responses
+  - Binary file transfers
   - Color coded response messages (Red=Errors, Yellow=Warnings, Green=Info)
 
 * cncBuddyCAM: Netduino+2 controller
@@ -18,7 +20,7 @@
     - Analog devices: NESControl or Joystick 
     - PC keyboard 
 
-![cncBuddyUI](/images/cncBuddyUI.png)
+![CncBuddyUI](/images/CncBuddyUI.png)
 
 If you would like to see additional functionality, feel free to post an enhancement/change request.
 
@@ -35,7 +37,7 @@ If you would like to see additional functionality, feel free to post an enhancem
   - Slave A axis
 * Netduino+2: X,Y,Z, A (slaved)
   - GPIO pins: Step / Direction / Limit Switch
-* 2D Simulator
+* 3D Path Viewer
   - Enable / Speed / Zoom / Cut Diameter
 
 -----------------------
@@ -48,15 +50,15 @@ If you would like to see additional functionality, feel free to post an enhancem
     - Click "PING" button should display message "Pinging... TinyCLR".
   - Set your network configuration parameters "Target->Configuration->Network".
     - Optional: You may have to restart TinyClr from the menu "Plug-In->Debug->Reboot CLR".
-- \bin\cncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
+- \bin\CncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
  
 -----------------------
 ####Getting started
 - cncBuddyCAM:
-  - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
+  - Blue LED 5 rapid flashes means waiting for a network connection to CncBuddyUI.
     - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
     - At start up, software always defaults to an "ESTOP" condition (Safety1st)!
-- cncBuddyUI:
+- CncBuddyUI:
   - Set all operating parameters in menu "Machine->Configuration Settings". Clicking the "Save" button:
     1. settings are sent to cncBuddyCAM for re-configuration
     2. "RPTSTATUS" response is always returned for verification
@@ -65,7 +67,7 @@ If you would like to see additional functionality, feel free to post an enhancem
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options (prefixed by "-","--", or "/"):
 ~~~~
-CNCBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
+CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
 
 /help|/?    Show this help/usage information
 /reset      Create new default software configuration
