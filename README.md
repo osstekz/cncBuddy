@@ -20,7 +20,7 @@
     - Analog devices: NESControl or Joystick 
     - PC keyboard 
 
-![CncBuddyUI](/images/CncBuddyUI.png)
+![CncBuddyUI](/images/cncBuddyUI.png)
 
 If you would like to see additional functionality, feel free to post an enhancement/change request.
 
