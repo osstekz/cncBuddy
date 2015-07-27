@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>cncBuddy by osstekz</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>cncBuddy</h1>
+        <h2>Netduino+2 controlled CNC Machine</h2>
+        <a href="https://github.com/osstekz/cncBuddy" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+<a id="cnc-3-axis-software-suite" class="anchor" href="#cnc-3-axis-software-suite" aria-hidden="true"><span class="octicon octicon-link"></span></a>CNC 3 Axis software suite</h3>
+
+<ul>
+<li>
+<p>CncBuddyUI: Windows G-Code parser/interpreting master control program. </p>
+
+<ul>
+<li>Fully configurable 4 stepper motor (X,Y,Z,A)</li>
+<li>Netduino+2 network(IP/Port) discovery</li>
+<li>Workspace / Tool Offsets</li>
+<li>InchesPerMinute Calibration</li>
+<li>3D Path Viewer</li>
+<li>Jogging devices(Analog NESController,Analog Joystick,Keyboard)</li>
+<li>Audible speech command responses</li>
+<li>Binary file transfers</li>
+<li>Color coded response messages (Red=Errors, Yellow=Warnings, Green=Info)</li>
+</ul>
+</li>
+<li>
+<p>cncBuddyCAM: Netduino+2 controller</p>
+
+<ul>
+<li>GPIO control up to 4 stepper motors</li>
+<li>UDP broadcast IPAddress/Port for discovery</li>
+<li>G-Code processor</li>
+<li>SDCard job caching</li>
+<li>X,Y,Z axis JogMode
+
+<ul>
+<li>Analog devices: NESControl or Joystick </li>
+<li>PC keyboard </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<p><img src="/images/cncBuddyUI.png" alt="CncBuddyUI"></p>
+
+<p>If you would like to see additional functionality, feel free to post an enhancement/change request.</p>
+
+<hr>
+
+<h4>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuration</h4>
+
+<ul>
+<li>General
+
+<ul>
+<li>Netduino+2 IP address &amp; Port (default Port:80)</li>
+<li>Feed Rates</li>
+<li>G-Code Header/Footer files</li>
+</ul>
+</li>
+<li>Axis Settings: X,Y,Z
+
+<ul>
+<li>Steps per Turn</li>
+<li>Turns per Inch</li>
+<li>Inverted signals</li>
+<li>Slave A axis</li>
+</ul>
+</li>
+<li>Netduino+2: X,Y,Z, A (slaved)
+
+<ul>
+<li>GPIO pins: Step / Direction / Limit Switch</li>
+</ul>
+</li>
+<li>3D Path Viewer
+
+<ul>
+<li>Enable / Speed / Zoom / Cut Diameter</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h4>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h4>
+
+<ul>
+<li>Download the zip archive and unpack or git-clone the project. The \bin folder contains the application files.</li>
+<li>\bin\cncBuddyCAM.hex is a Netduino+2 image for .NET Micro Framework SDK v4.2.2.  You must run MFDeploy.exe to load the hex image onto your Netduino+2. Once the cncBuddyCAM.hex image is loaded...
+
+<ul>
+<li>Make sure the device is responding: 
+
+<ul>
+<li>Optional: You may have to restart TinyClr from the menu "Plug-In-&gt;Debug-&gt;Reboot CLR".</li>
+<li>Select Device type = "USB" and name "NetduinoPlus2_Netduino".</li>
+<li>Click "PING" button should display message "Pinging... TinyCLR".</li>
+</ul>
+</li>
+<li>Set your network configuration parameters "Target-&gt;Configuration-&gt;Network".
+
+<ul>
+<li>Optional: You may have to restart TinyClr from the menu "Plug-In-&gt;Debug-&gt;Reboot CLR".</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>\bin\CncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework</li>
+</ul>
+
+<hr>
+
+<h4>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started</h4>
+
+<ul>
+<li>cncBuddyCAM:
+
+<ul>
+<li>Blue LED 5 rapid flashes means waiting for a network connection to CncBuddyUI.
+
+<ul>
+<li>The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).</li>
+<li>At start up, software always defaults to an "ESTOP" condition (Safety1st)!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CncBuddyUI:
+
+<ul>
+<li>Set all operating parameters in menu "Machine-&gt;Configuration Settings". Clicking the "Save" button:
+
+<ol>
+<li>settings are sent to cncBuddyCAM for re-configuration</li>
+<li>"RPTSTATUS" response is always returned for verification</li>
+<li>settings are stored locally on your hard drive to be used during next startup.</li>
+</ol>
+</li>
+<li>At start up, we always produce an "ESTOP" condition! Any/All errors must be resolved before you can Reset/Clear an "ESTOP" (Safety1st).</li>
+<li>Audible beeps are used during "ESTOP" conditions and error detection.</li>
+<li>Command line options (prefixed by "-","--", or "/"):</li>
+</ul>
+</li>
+</ul>
+
+<pre><code>CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
+
+/help|/?    Show this help/usage information
+/reset      Create new default software configuration
+/discover   Listen for cncBuddyCAM broadcasting IPAddress &amp; Port (timeout 30 secs)
+/install    Install hardware specific settings on Netduino+2 SDCard. Overrides software configuration values
+   port     Network port number (default=80)
+   axisA    Slave axisA motor signals to X or Y axis
+</code></pre>
+
+<hr>
+
+<h4>
+<a id="estop" class="anchor" href="#estop" aria-hidden="true"><span class="octicon octicon-link"></span></a>ESTOP</h4>
+
+<p>ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:</p>
+
+<pre><code>| ## |                         Description                           |
+| -- | ------------------------------------------------------------- |
+| 01 | PAUSE button                                                  |
+| 02 | ESTOP button                                                  |
+| 04 | OVERTRAVEL - limit switch detected                            |
+| 08 | CLIENTSOCKETNOTREADY - network connection not ready/available |
+| 16 | CONFIGERROR - configuration error                             |
+</code></pre>
+
+<hr>
+
+<h4>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h4>
+
+<p>I've built a couple CNC machines which rely heavily on this project for their day to day use.
+I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.</p>
+
+<p>Feel free to file issues and change requests.</p>
+
+<p>Development and testing use the .NET Micro Framework SDK v4.2.2</p>
+
+<p>Contributions always welcome!</p>
+
+<hr>
+
+<h4>
+<a id="requested-features" class="anchor" href="#requested-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requested Features</h4>
+
+<pre><code>- AndroidUI Controller
+</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/osstekz/cncBuddy/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/osstekz/cncBuddy/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/osstekz/cncBuddy"></a> is maintained by <a href="https://github.com/osstekz">osstekz</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
