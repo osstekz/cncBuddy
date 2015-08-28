@@ -102,7 +102,7 @@ Feel free to file issues and change requests.
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions always welcome!
-```html
+
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_donations">
 <input type="hidden" name="business" value="osstekz@gmail.com">
@@ -115,7 +115,7 @@ Contributions always welcome!
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
-```
+
 -----------------------
 ####Requested Features
     - AndroidUI Controller
