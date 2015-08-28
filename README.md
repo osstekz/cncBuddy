@@ -67,7 +67,7 @@ If you would like to see additional functionality, feel free to post an enhancem
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options (prefixed by "-","--", or "/"):
 ~~~~
-CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]] 
+CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999][,limitsw=true|false]] 
 
 /help|/?    Show this help/usage information
 /reset      Create new default software configuration
@@ -75,6 +75,9 @@ CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]
 /install    Install hardware specific settings on Netduino+2 SDCard. Overrides software configuration values
    port     Network port number (default=80)
    axisA    Slave axisA motor signals to X or Y axis
+   limitsw  Limit switches are installed and active on X,Y,Z axis
+
+Example: CncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 ~~~~
 
 -----------------------
@@ -99,7 +102,13 @@ Feel free to file issues and change requests.
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 Contributions always welcome!
- 
+ <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 -----------------------
 ####Requested Features
     - AndroidUI Controller
