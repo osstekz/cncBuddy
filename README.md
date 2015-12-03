@@ -101,7 +101,7 @@ Feel free to file issues and change requests.
 
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
-Contributions always welcome!
+If you find this software useful, want to say thanks and encourage development, please consider a donation.
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZMMCYGL8QD8BW&lc=US&item_name=cncBuddy%20XProject&item_number=cncBuddy&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 -----------------------
 ####Requested Features
