@@ -50,12 +50,12 @@ If you would like to see additional functionality, feel free to post an enhancem
     - Click "PING" button should display message "Pinging... TinyCLR".
   - Set your network configuration parameters "Target->Configuration->Network".
     - Optional: You may have to restart TinyClr from the menu "Plug-In->Debug->Reboot CLR".
-- \bin\CncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
+- \bin\cncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
  
 -----------------------
 ####Getting started
 - cncBuddyCAM:
-  - Blue LED 5 rapid flashes means waiting for a network connection to CncBuddyUI.
+  - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
     - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
     - At start up, software always defaults to an "ESTOP" condition (Safety1st)!
 - CncBuddyUI:
@@ -67,7 +67,7 @@ If you would like to see additional functionality, feel free to post an enhancem
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options (prefixed by "-","--", or "/"):
 ~~~~
-CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999][,limitsw=true|false]] 
+cncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999][,limitsw=true|false]] 
 
 /help|/?    Show this help/usage information
 /reset      Create new default software configuration
@@ -77,7 +77,7 @@ CncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]
    axisA    Slave axisA motor signals to X or Y axis
    limitsw  Limit switches are installed and active on X,Y,Z axis
 
-Example: CncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
+Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 ~~~~
 
 -----------------------
