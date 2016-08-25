@@ -1,6 +1,9 @@
 
 ###CNC 3 Axis software suite
-* CncBuddyUI: Windows G-Code parser/interpreting master control program. 
+* cncBuddyCAD: Windows CNC/CAD Designer program. 
+![CncBuddyCAD](/images/cncBuddyCAD.png)
+
+* cncBuddyCAMUI: Windows G-Code parser/interpreting master control program. 
   - Fully configurable 4 stepper motor (X,Y,Z,A)
   - Netduino+2 network(IP/Port) discovery
   - Workspace / Tool Offsets
