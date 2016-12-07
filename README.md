@@ -1,10 +1,9 @@
 
 ###CNC 3 Axis software suite
 * cncBuddyCAD: Windows CNC/CAD Designer program
-  - Job Manager (Operations,Tools,Materials)
-  - G-Code builder
-  - WireFrame viewer
-  - Tabs generator (Perimeter & Radial)
+  |Job Manager (Operations,Tools,Materials)|Cut order optimizer|
+  |G-Code editor|3D WireFrame viewer|
+  |Tabs generator (Perimeter & Radial)||
 
 ![CncBuddyCAD](/images/cncBuddyCAD.png)
 
