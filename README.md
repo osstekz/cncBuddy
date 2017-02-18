@@ -125,4 +125,4 @@ If you find this software useful, want to say thanks and encourage development, 
  - AndroidUI Controller
 </code></pre>
 
-<p style="font-size:10px"><i>*Contributions by the great work of Darrin Howell's <a href="http://forums.netduino.com/index.php?/topic/2892-my-netduino-cnc-machine/">DazCam</a> project</i></p>
+<p><i>*Contributions by the great work of Darrin Howell's <a href="http://forums.netduino.com/index.php?/topic/2892-my-netduino-cnc-machine/">DazCam</a> project</i></p>
