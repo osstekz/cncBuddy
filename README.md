@@ -98,7 +98,7 @@ Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 -----------------------
 <H4>ESTOP</H4>
 ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
-<table align="center" style="font-size:10pt">
+<table style="font-size:10pt">
     <tr>
         <th align="center">##</th>
         <th align="center">Description</th>
