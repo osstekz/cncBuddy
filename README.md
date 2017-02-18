@@ -5,7 +5,7 @@
   |G-Code editor|3D WireFrame viewer|
   |Tabs generator (Perimeter & Radial)||
 
-![CncBuddyCAD](/images/cncBuddyCAD.png)
+![CncBuddyCAD](images/cncBuddyCAD.png)
 
 * cncBuddyCAMUI: Windows G-Code parser/interpreting master control program. 
   - Fully configurable 4 stepper motor (X,Y,Z,A)
@@ -27,7 +27,7 @@
     - Analog devices: NESControl or Joystick 
     - PC keyboard 
 
-![CncBuddyUI](/images/cncBuddyUI.png)
+![CncBuddyUI](images/cncBuddyUI.png)
 
 If you would like to see additional functionality, feel free to post an enhancement/change request.
 
