@@ -1,8 +1,18 @@
-###CNC 3 Axis software suite
+<H3>CNC 3 Axis software suite</H3>
 * cncBuddyCAD: Windows CNC/CAD Designer program
-  |Job Manager (Operations,Tools,Materials)|Cut order optimizer|
-  |G-Code editor|3D WireFrame viewer|
-  |Tabs generator (Perimeter & Radial)||
+<table align="center">
+    <tr>
+        <td align="center">Job Manager (Operations,Tools,Materials)</td>
+        <td align="center">Cut order optimizer</td>
+    </tr>
+    <tr>
+        <td align="center">G-Code editor</td>
+        <td align="center">3D WireFrame viewer</td>
+    </tr>
+    <tr>
+        <td align="center">Tabs generator (Perimeter & Radial)</td>
+    </tr>
+</table>
 
 ![CncBuddyCAD](images/cncBuddyCAD.png)
 
@@ -28,10 +38,8 @@
 
 ![CncBuddyUI](images/cncBuddyUI.png)
 
-If you would like to see additional functionality, feel free to post an enhancement/change request.
-
 -----------------------
-####Configuration
+<H4>Configuration</H4>
 * General
   - Netduino+2 IP address & Port (default Port:80)
   - Feed Rates
@@ -47,7 +55,7 @@ If you would like to see additional functionality, feel free to post an enhancem
   - Enable / Speed / Zoom / Cut Diameter
 
 -----------------------
-####Installation
+<H4>Installation</H4>
 - Download the zip archive and unpack or git-clone the project. The \bin folder contains the application files.
 - \bin\cncBuddyCAM.hex is a Netduino+2 image for .NET Micro Framework SDK v4.2.2.  You must run MFDeploy.exe to load the hex image onto your Netduino+2. Once the cncBuddyCAM.hex image is loaded...
   - Make sure the device is responding: 
@@ -59,7 +67,7 @@ If you would like to see additional functionality, feel free to post an enhancem
 - \bin\cncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
  
 -----------------------
-####Getting started
+<H4>Getting started</H4>
 - cncBuddyCAM:
   - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
     - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
@@ -72,7 +80,8 @@ If you would like to see additional functionality, feel free to post an enhancem
   - At start up, we always produce an "ESTOP" condition! Any/All errors must be resolved before you can Reset/Clear an "ESTOP" (Safety1st).
   - Audible beeps are used during "ESTOP" conditions and error detection.
   - Command line options (prefixed by "-","--", or "/"):
-~~~~
+
+<pre><code>
 cncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999][,limitsw=true|false]] 
 
 /help|/?    Show this help/usage information
@@ -84,10 +93,10 @@ cncBuddyUI.exe [/help|/?] [/reset] [/discover] [/install:[axisA=X|Y][,port=9999]
    limitsw  Limit switches are installed and active on X,Y,Z axis
 
 Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
-~~~~
+</code></pre>
 
 -----------------------
-####ESTOP
+<H4>ESTOP</H4>
 ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
 
 	| ## |                         Description                           |
@@ -99,16 +108,21 @@ ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC v
 	| 16 | CONFIGERROR - configuration error                             |
 
 -----------------------
-####Development
+<H4>Development</H4>
 I've built a couple CNC machines which rely heavily on this project for their day to day use.
 I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.
 
-Feel free to file issues and change requests.
+Feel free to file enhancements, issues, and change requests.
 
 Development and testing use the .NET Micro Framework SDK v4.2.2
 
 If you find this software useful, want to say thanks and encourage development, please consider a donation.
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZMMCYGL8QD8BW&lc=US&item_name=cncBuddy%20XProject&item_number=cncBuddy&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 -----------------------
-####Requested Features
-    - AndroidUI Controller
+
+<H4>Requested Features</H4>
+<pre><code> - OpenGL "Hardware accelerated graphics"
+ - AndroidUI Controller
+</code></pre>
+
+<p style="font-size:10px"><i>*Contributions by the great work of Darrin Howell's <a href="http://forums.netduino.com/index.php?/topic/2892-my-netduino-cnc-machine/">DazCam</a> project</i></p>
