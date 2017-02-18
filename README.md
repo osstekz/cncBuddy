@@ -98,14 +98,32 @@ Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 -----------------------
 <H4>ESTOP</H4>
 ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
-
-	| ## |                         Description                           |
-	| -- | ------------------------------------------------------------- |
-	| 01 | PAUSE button                                                  |
-	| 02 | ESTOP button                                                  |
-	| 04 | OVERTRAVEL - limit switch detected                            |
-	| 08 | CLIENTSOCKETNOTREADY - network connection not ready/available |
-	| 16 | CONFIGERROR - configuration error                             |
+<table align="center" style="font-size:10pt">
+    <tr>
+        <th align="center">##</th>
+        <th align="center">Description</th>
+    </tr>
+    <tr>
+        <td align="center">01</td>
+        <td align="left">PAUSE button</td>
+    </tr>
+    <tr>
+        <td align="center">02</td>
+        <td align="left">ESTOP button</td>
+    </tr>
+    <tr>
+        <td align="center">04</td>
+        <td align="left">OVERTRAVEL - limit switch detected</td>
+    </tr>
+    <tr>
+        <td align="center">08</td>
+        <td align="left">CLIENTSOCKETNOTREADY - network connection not ready/available</td>
+    </tr>
+     <tr>
+        <td align="center">16</td>
+        <td align="left">CONFIGERROR - configuration error</td>
+    </tr>
+</table>
 
 -----------------------
 <H4>Development</H4>
