@@ -14,7 +14,7 @@
     </tr>
 </table>
 
-![CncBuddyCAD](images/cncBuddyCAD.png)
+![cncBuddyCAD](images/cncBuddyCAD.png)
 
 * cncBuddyCAMUI: Windows G-Code parser/interpreting master control program. 
   - Fully configurable 4 stepper motor (X,Y,Z,A)
@@ -36,7 +36,7 @@
     - Analog devices: NESControl or Joystick 
     - PC keyboard 
 
-![CncBuddyUI](images/cncBuddyUI.png)
+![cncBuddyUI](images/cncBuddyUI.png)
 
 -----------------------
 <H4>Configuration</H4>
@@ -72,7 +72,7 @@
   - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
     - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
     - At start up, software always defaults to an "ESTOP" condition (Safety1st)!
-- CncBuddyUI:
+- cncBuddyUI:
   - Set all operating parameters in menu "Machine->Configuration Settings". Clicking the "Save" button:
     1. settings are sent to cncBuddyCAM for re-configuration
     2. "RPTSTATUS" response is always returned for verification
@@ -98,7 +98,7 @@ Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 -----------------------
 <H4>ESTOP</H4>
 ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
-<table style="font-size:10pt">
+<table align="center" style="font-size:10pt">
     <tr>
         <th align="center">##</th>
         <th align="center">Description</th>
@@ -124,7 +124,6 @@ ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC v
         <td align="left">CONFIGERROR - configuration error</td>
     </tr>
 </table>
-
 -----------------------
 <H4>Development</H4>
 I've built a couple CNC machines which rely heavily on this project for their day to day use.
@@ -139,7 +138,8 @@ If you find this software useful, want to say thanks and encourage development, 
 -----------------------
 
 <H4>Requested Features</H4>
-<pre><code> - OpenGL "Hardware accelerated graphics"
+<pre><code>
+ - OpenGL "Hardware accelerated graphics"
  - AndroidUI Controller
 </code></pre>
 
