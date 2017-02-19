@@ -1,8 +1,16 @@
-# Don’t commit the following files and directories
+# Donâ€™t commit the following files and directories
 # images/cncBuddyUI.png
 # images/20150814_202538.jpg
 # images/20150814_202602.jpg
 # images/cncbuddyui_small.png
+
+# =========================
+# GitHub internals
+# =========================
+readme.md
+*.yml
+.gitignore
+.gitattributes
 
 # =========================
 # Operating System Files
