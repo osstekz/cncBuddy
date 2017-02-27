@@ -39,7 +39,7 @@
 ![cncBuddyUI](images/cncBuddyUI.png)
 
 -----------------------
-<H4>Configuration</H4>
+<h4>Configuration</h4>
 * General
   - Netduino+2 IP address & Port (default Port:80)
   - Feed Rates
@@ -55,7 +55,7 @@
   - Enable / Speed / Zoom / Cut Diameter
 
 -----------------------
-<H4>Installation</H4>
+<h4>Installation</h4>
 - Download the zip archive and unpack or git-clone the project. The \bin folder contains the application files.
 - \bin\cncBuddyCAM.hex is a Netduino+2 image for .NET Micro Framework SDK v4.2.2.  You must run MFDeploy.exe to load the hex image onto your Netduino+2. Once the cncBuddyCAM.hex image is loaded...
   - Make sure the device is responding: 
@@ -67,7 +67,7 @@
 - \bin\cncBuddyUI.exe is a Windows ready-to-run program on the .Net4.0 framework
  
 -----------------------
-<H4>Getting started</H4>
+<h4>Getting started</h4>
 - cncBuddyCAM:
   - Blue LED 5 rapid flashes means waiting for a network connection to cncBuddyUI.
     - The ONBOARD_SW1 button (typically used for rebooting) is re-configured for use as an "ESTOP" button (Safety1st).
@@ -96,8 +96,8 @@ Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 </code></pre>
 
 -----------------------
-<H4>ESTOP</H4>
-ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:
+<h4>ESTOP</h4>
+<p>ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC value can be any combination:</p>
 <table align="center" style="font-size:10pt">
     <tr>
         <th align="center">##</th>
@@ -125,22 +125,19 @@ ESTOP conditions are stored internally as Motion Interrupt Flags(MIC). The MIC v
     </tr>
 </table>
 -----------------------
-<H4>Development</H4>
-I've built a couple CNC machines which rely heavily on this project for their day to day use.
-I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.
-
-Feel free to file enhancements, issues, and change requests.
-
-Development and testing use the .NET Micro Framework SDK v4.2.2
-
-If you find this software useful, want to say thanks and encourage development, please consider a donation.
+<h4>Development</h4>
+<p>I've built a couple CNC machines which rely heavily on this project for their day to day use.  I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.</p>
+<p>Feel free to file enhancements, issues, and change requests.</p>
+<p>Development and testing use the .NET Micro Framework SDK v4.2.2</p>
+<p>If you find this software useful, want to say thanks and encourage development, please consider a donation.</p>
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZMMCYGL8QD8BW&lc=US&item_name=cncBuddy%20XProject&item_number=cncBuddy&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 -----------------------
 
-<H4>Requested Features</H4>
-<pre><code>
- - OpenGL "Hardware accelerated graphics"
- - AndroidUI Controller
-</code></pre>
+<h4>Requested Features</h4>
+<ul>
+	<li>DirectX/OpenGL "Hardware accelerated graphics"</li>
+	<li>Import DXF format</li>
+	<li>AndroidUI Controller</li>
+</ul>
 
 <p><i>*Contributions by the great work of Darrin Howell's <a href="http://forums.netduino.com/index.php?/topic/2892-my-netduino-cnc-machine/">DazCam</a> project</i></p>
