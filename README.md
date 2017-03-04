@@ -127,7 +127,7 @@ Example: cncBuddyUI.exe /install:"axisA=X,port=4512,limitsw=true"
 -----------------------
 <h4>Development</h4>
 <p>I've built a couple CNC machines which rely heavily on this project for their day to day use.  I'm dedicated to growing it's base whether applying bug fixes, performance tuning, or adding features.</p>
-<p>Feel free to file enhancements, issues, and change requests.</p>
+<p>Feel free to file <a href="https://github.com/osstekz/cncBuddy/issues">enhancements, issues, and change requests</a>.</p>
 <p>Development and testing use the .NET Micro Framework SDK v4.2.2</p>
 <p>If you find this software useful, want to say thanks and encourage development, please consider a donation.</p>
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZMMCYGL8QD8BW&lc=US&item_name=cncBuddy%20XProject&item_number=cncBuddy&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
